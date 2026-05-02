@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quarantine Zone - TabAmnesia</title>
+  <link href="css/tailwind.css" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-gray-900 text-gray-100">
+  <div class="container mx-auto px-4 py-8 max-w-4xl">
+    <header class="mb-8">
+      <h1 class="text-3xl font-bold text-red-500 mb-2">Quarantine Zone</h1>
+      <p class="text-gray-400">Your quarantined tabs are stored here. Click Restore to reopen any tab.</p>
+    </header>
+
+    <div id="stats" class="mb-6 p-4 bg-gray-800 rounded-lg">
+      <span class="text-gray-400">Quarantined tabs: </span>
+      <span id="count" class="text-xl font-semibold text-red-400">0</span>
+    </div>
+
+    <div id="empty-state" class="hidden text-center py-12">
+      <div class="text-6xl mb-4">🧹</div>
+      <h2 class="text-xl font-semibold text-gray-300 mb-2">All Clear!</h2>
+      <p class="text-gray-500">No tabs in quarantine. Your workspace is clean.</p>
+    </div>
+
+    <div id="tabs-container" class="grid gap-4">
+      <!-- Quarantined tabs will be rendered here -->
+    </div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
